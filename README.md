@@ -18,6 +18,8 @@ Wiring:
 | MOSI           | 19                        |
 | SCK/SCL           | 23                        |
 
+Also, you will need a USB Camera.  
+In my Raspberry is mounted on /dev/video0.  
 
 Raspberry Pi 3B+ pin reference:  
 ![PINOUT](pinout.jpg)
