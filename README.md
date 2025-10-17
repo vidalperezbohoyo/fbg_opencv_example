@@ -8,11 +8,20 @@ Example shows:
 
 # Hardware for running the example
 I am using a **gc9a01** display, but other SPI (and I2C) screens can be used with this method.
-The wiring is:
+The wiring is (using the Pin Number, the one in the circles):
+| TFT Pin | Raspberry Pi Physical Pin |
+|----------------|---------------------------|
+| VCC            | 1 (3.3v)                     |
+| GND            | 6 (GND)                          |
+| CS             | 24                        |
+| RESET          | 22                        |
+| DC / RS        | 18                        |
+| MOSI           | 19                        |
+| SCK            | 23                        |
 
 
 Raspberry Pi 3B pin reference:
-
+![Texto alternativo](pinout.jpg)
 
 
 # Configuration on Raspberry (or probably other linux systems)
