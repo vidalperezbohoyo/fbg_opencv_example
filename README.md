@@ -1,14 +1,12 @@
 # fbg_opencv_example
-In this repo is shown the fbg library working with OpenCV in C++.  
-I am using a RPi3B+ and gc9a01 SPI screen. Others systems can be used.
-![GIF](gif.gif)
+![GIF](gif.gif)  
 This example shows:
-- Read cv::Mat from cv::VideoCapture
-- Convert to fbg_img struct
+- Read **cv::Mat** from **cv::VideoCapture**
+- Convert to **fbg_img** struct
 - Display on the TFT (Any TFT)
 
 # Hardware for running the example
-I am using a **gc9a01** display, but other SPI (and I2C) screens can be used with this method.  
+I am using a **gc9a01** display in Raspberry Pi 3B+, but other SPI (and I2C) screens can be used with this method.  
 The wiring is (using the Pin Number, the one in the circles):
 | TFT Pin | Raspberry Pi Physical Pin |
 |----------------|---------------------------|
@@ -21,7 +19,7 @@ The wiring is (using the Pin Number, the one in the circles):
 | SCK/SCL           | 23                        |
 
 
-Raspberry Pi 3B pin reference:
+Raspberry Pi 3B+ pin reference:
 ![PINOUT](pinout.jpg)
 
 
