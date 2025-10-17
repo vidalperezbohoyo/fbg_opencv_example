@@ -24,12 +24,16 @@ Raspberry Pi 3B+ pin reference:
 
 
 # Configuration on Raspberry (or probably other linux systems)
-You have to change one thing in the SD card.  
-Open it with an external PC and navigate to /boot partition. You will find a folder
+*You have to change one thing in the SD card.* 
+Open it with an external PC and navigate to **/boot** partition. In my PC is called D:bootfs.  
+You will find a folder called **/overlays** find here: **gc9a01.dtbo** or nameofscreen.dtbo.
+If exist, nice. If not, you have to find it in internet and add it.
+You have to change in **config.txt** (outside of **/overlays** folder):  
 
-Change this line:
+```dtoverlay=gc9a01```
+(Or your TFT driver name...)
 
-Reboot.
+Insert the SD card and turn on the system. 
 
 Ensure that now there are 2 devices (one is your HDMI and the other is the TFT display).
 If not, check the wiring and SD /boot configuration.
