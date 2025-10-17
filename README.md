@@ -14,10 +14,10 @@ The wiring is (using the Pin Number, the one in the circles):
 | VCC            | 1 (3.3v)                     |
 | GND            | 6 (GND)                          |
 | CS             | 24                        |
-| RESET          | 22                        |
-| DC / RS        | 18                        |
+| RESET          | 13                        |
+| DC / RS        | 22                        |
 | MOSI           | 19                        |
-| SCK            | 23                        |
+| SCK/SCL           | 23                        |
 
 
 Raspberry Pi 3B pin reference:
