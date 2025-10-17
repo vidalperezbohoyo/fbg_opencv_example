@@ -62,3 +62,14 @@ If is working, insert in that folder my example code: cam_to_fbg.cpp
 Install opencv and other dependencies if they are needed:
 
 Compile it with:
+**First C files** (Do once)  
+```gcc -c ../src/lodepng/lodepng.c ../src/nanojpeg/nanojpeg.c ../src/fbgraphics.c ../custom_backend/fbdev/fbg_fbdev.c \
+-I../src -I. -I../custom_backend/fbdev -O2 -Wall```
+
+**Create static lib** (Do once)  
+```ar rcs libfbg.a lodepng.o nanojpeg.o fbgraphics.o fbg_fbdev.o```
+
+**Compile the example** (Do on every change)  
+```g++ cam_to_fbg.cpp -I../src -I. -I../custom_backend/fbdev \
+-std=c++11 -Wall -g `pkg-config --cflags --libs opencv4` libfbg.a -lm -o cam_to_fbg```
+
