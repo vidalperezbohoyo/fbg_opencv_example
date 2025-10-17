@@ -45,7 +45,8 @@ Insert the SD card and turn on the system.
 Ensure that now there are 2 devices (one is your HDMI and the other is the TFT display).
 Type in terminal:  
 ```bash
-ls /dev/fb*```   
+ls /dev/fb*
+```   
 Should output at least /dev/fb0 and /dev/fb1
 
 > Note: If not, check the wiring and SD /boot configuration. Screen is not being recognised.
@@ -63,7 +64,7 @@ If is working, insert in that folder my example code: cam_to_fbg.cpp
 Install opencv and other dependencies if they are needed:
 
 ## Compilation  
-**First C files** (Do once)  
+**First C files** (Do once) 
 ```bash
 gcc -c ../src/lodepng/lodepng.c ../src/nanojpeg/nanojpeg.c ../src/fbgraphics.c ../custom_backend/fbdev/fbg_fbdev.c -I../src -I. -I../custom_backend/fbdev -O2 -Wall
 ```
